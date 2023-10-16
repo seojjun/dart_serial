@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     final theme = ThemeData(
       useMaterial3: true,
-      colorSchemeSeed: Colors.purple,
+      colorSchemeSeed: Colors.blue,
       brightness: Brightness.dark,
       inputDecorationTheme: InputDecorationTheme(
         border: OutlineInputBorder(),
