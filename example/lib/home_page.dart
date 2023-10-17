@@ -7,6 +7,9 @@ import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
 
 import 'package:serial/serial.dart';
+import 'package:logger/logger.dart';
+
+final logger = Logger();
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -41,6 +44,7 @@ class _HomePageState extends State<HomePage> {
 
     _startReceiving1(port);
 
+    logger.i('port1 open');
     setState(() {});
   }
 
